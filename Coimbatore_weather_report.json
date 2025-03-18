@@ -1,0 +1,97 @@
+{
+  "city": "Coimbatore",
+  "report_generated": "2025-03-18T23:02:47.547660",
+  "current_weather": {
+    "timestamp": "2025-03-18T23:02:47.743854",
+    "fetch_time": 1742319167,
+    "temp": 27.88,
+    "feels_like": 30.96,
+    "temp_min": 27.88,
+    "temp_max": 27.88,
+    "pressure": 1013,
+    "humidity": 74,
+    "wind_speed": 1.54,
+    "wind_direction": 0,
+    "weather_main": "Haze",
+    "weather_description": "haze",
+    "clouds": 20,
+    "city": "Coimbatore"
+  },
+  "historical_analysis": {
+    "temperature": {
+      "average": 27.88,
+      "median": 27.88,
+      "min": 27.88,
+      "max": 27.88,
+      "range": 0.0,
+      "days_analyzed": 7
+    },
+    "humidity": {
+      "average": 74,
+      "median": 74,
+      "min": 74,
+      "max": 74
+    },
+    "wind": {
+      "average_speed": 2.23,
+      "max_speed": 2.57
+    },
+    "weather_conditions": {
+      "Haze": {
+        "count": 3,
+        "percentage": 100.0
+      }
+    },
+    "predominant_weather": "Haze"
+  },
+  "forecast_summary": {
+    "avg_temp": 28.39,
+    "min_temp": 23.06,
+    "max_temp": 35.35,
+    "predominant_weather": "Clouds",
+    "forecast_hours": 40,
+    "daily": {
+      "2025-03-18": {
+        "avg_temp": 27.35,
+        "min_temp": 26.83,
+        "max_temp": 27.88,
+        "predominant_weather": "Rain"
+      },
+      "2025-03-19": {
+        "avg_temp": 28.79,
+        "min_temp": 24.91,
+        "max_temp": 34.42,
+        "predominant_weather": "Clouds"
+      },
+      "2025-03-20": {
+        "avg_temp": 28.19,
+        "min_temp": 23.79,
+        "max_temp": 34.25,
+        "predominant_weather": "Clear"
+      },
+      "2025-03-21": {
+        "avg_temp": 28.18,
+        "min_temp": 23.21,
+        "max_temp": 34.94,
+        "predominant_weather": "Clouds"
+      },
+      "2025-03-22": {
+        "avg_temp": 28.35,
+        "min_temp": 23.19,
+        "max_temp": 35.35,
+        "predominant_weather": "Clouds"
+      },
+      "2025-03-23": {
+        "avg_temp": 28.78,
+        "min_temp": 23.06,
+        "max_temp": 35.08,
+        "predominant_weather": "Rain"
+      }
+    }
+  },
+  "trend_analysis": {
+    "recent_temp_trend": 0.0,
+    "forecast_vs_recent": 0.0,
+    "temperature_outlook": "stable"
+  }
+}
