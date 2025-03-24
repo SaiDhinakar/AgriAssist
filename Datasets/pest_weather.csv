@@ -1,0 +1,61 @@
+plant,insect_name,damage,min_temp,max_temp,avg_temp,humidity,rain
+Apple,Codling Moth,Larvae bore into fruit,15,30,22.5,40-60,Low
+Apple,Apple Maggot,Tunnels in fruit,18,32,25,60-80,Moderate
+Apple,Aphids (Rosy Apple),Sap sucking/leaf curl,10,25,17.5,50-70,Moderate
+Apple,European Red Mite,Leaf bronzing,18,32,25,50-70,Low
+Apple,Plum Curculio,Fruit scarring,15,30,22.5,60-80,High
+Blueberry,Blueberry Maggot,Fruit infestation,20,32,26,60-85,High
+Blueberry,Spotted Wing Drosophila,Fruit rot,20,30,25,70-90,Moderate
+Blueberry,Aphids,Sap sucking/stunting,10,25,17.5,50-70,Moderate
+Blueberry,Blueberry Gall Midge,Bud/leaf damage,15,28,21.5,60-80,Moderate
+Blueberry,Japanese Beetle,Leaf skeletonization,25,35,30,40-60,Low
+Cherry,Cherry Fruit Fly,Fruit infestation,15,30,22.5,60-80,High
+Cherry,Spotted Wing Drosophila,Fruit rot,20,30,25,70-90,Moderate
+Cherry,Black Cherry Aphid,Leaf curling/sap suck,10,25,17.5,50-70,Moderate
+Cherry,Plum Curculio,Fruit scarring,15,30,22.5,60-80,High
+Cherry,Western Cherry Fruit Fly,Fruit infestation,18,32,25,60-85,Moderate
+Corn,Corn Earworm,Ear damage,25,35,30,40-60,Low
+Corn,European Corn Borer,Stalk tunneling,20,32,26,60-80,Moderate
+Corn,Armyworm,Leaf/stalk feeding,20,30,25,60-85,High
+Corn,Western Corn Rootworm,Root feeding,18,30,24,50-70,Moderate
+Corn,Fall Armyworm,Leaf/ear damage,22,34,28,60-85,High
+Grape,Grape Berry Moth,Berry webbing/rot,20,32,26,60-80,Moderate
+Grape,Spotted Wing Drosophila,Fruit rot,20,30,25,70-90,Moderate
+Grape,Japanese Beetle,Leaf skeletonization,25,35,30,40-60,Low
+Grape,Grape Phylloxera,Root/leaf damage,15,30,22.5,50-70,Moderate
+Grape,Leafhoppers,Sap sucking/leaf curl,18,32,25,50-70,Low
+Peach,Peach Tree Borer,Trunk damage,20,35,27.5,40-60,Low
+Peach,Oriental Fruit Moth,Fruit tunneling,20,32,26,60-80,Moderate
+Peach,Plum Curculio,Fruit scarring,18,30,24,60-85,High
+Peach,Green Peach Aphid,Sap sucking/viruses,10,25,17.5,50-70,Moderate
+Peach,San Jose Scale,Bark/fruit damage,15,30,22.5,40-60,Low
+Pepper,Pepper Weevil,Fruit/bud damage,25,35,30,40-60,Low
+Pepper,Aphids (Green Peach),Sap sucking/viruses,10,25,17.5,50-70,Moderate
+Pepper,Corn Earworm,Fruit feeding,25,35,30,60-80,Moderate
+Pepper,Pepper Maggot,Fruit infestation,20,32,26,60-85,High
+Pepper,Broad Mites,Leaf distortion,20,30,25,70-90,Moderate
+Potato,Colorado Potato Beetle,Leaf defoliation,20,32,26,40-60,Low
+Potato,Potato Aphid,Sap sucking/viruses,15,28,21.5,50-70,Moderate
+Potato,Wireworms,Tuber boring,10,20,15,60-80,High
+Potato,Potato Tuberworm,Tuber damage,20,32,26,50-70,Moderate
+Potato,Flea Beetles,Leaf holes,15,30,22.5,40-60,Low
+Raspberry,Spotted Wing Drosophila,Fruit rot,20,30,25,70-90,Moderate
+Raspberry,Raspberry Cane Borer,Cane wilting,20,32,26,40-60,Low
+Raspberry,Aphids,Sap sucking/viruses,10,25,17.5,50-70,Moderate
+Raspberry,Raspberry Fruitworm,Fruit damage,15,30,22.5,60-80,Moderate
+Raspberry,Japanese Beetle,Leaf skeletonization,25,35,30,40-60,Low
+Soybean,Soybean Aphid,Sap sucking/stunting,15,28,21.5,60-80,Moderate
+Soybean,Bean Leaf Beetle,Leaf/pod feeding,20,35,27.5,40-60,Low
+Soybean,Japanese Beetle,Leaf skeletonization,25,35,30,40-60,Low
+Soybean,Stink Bugs,Pod damage,20,32,26,60-80,Moderate
+Soybean,Soybean Looper,Leaf defoliation,22,34,28,60-85,High
+Strawberry,Spotted Wing Drosophila,Fruit rot,20,30,25,70-90,Moderate
+Strawberry,Strawberry Root Weevil,Root feeding/decline,10,20,15,60-80,High
+Strawberry,Aphids,Sap sucking/viruses,10,25,17.5,50-70,Moderate
+Strawberry,Strawberry Bud Weevil,Bud/flower damage,15,28,21.5,50-70,Moderate
+Strawberry,Cyclamen Mite,Leaf distortion,15,25,20,70-90,High
+Tomato,Tomato Hornworm,Leaf/fruit defoliation,24,35,29.5,60-80,Moderate
+Tomato,Aphids,Sap sucking/viruses,10,25,17.5,50-70,Moderate
+Tomato,Whiteflies,Sap sucking/mold,25,35,30,40-60,Low
+Tomato,Tomato Fruitworm,Fruit tunneling,25,35,30,60-80,Moderate
+Tomato,Stink Bugs,Fruit spotting,20,32,26,60-80,Moderate
