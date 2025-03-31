@@ -6,6 +6,30 @@ import os
 import statistics
 from dotenv import dotenv_values
 from typing import Dict, List, Any, Optional
+import pandas as pd 
+import numpy as np
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+import joblib
+import os
+
+PEST_DATA = pd.read_csv("Datasets/pest_.csv")
+PEST_DATA.head()
+
+# Create a mapping dictionary for rain values to percentages
+rain_mapping = {
+    'Low': 20,       # Low rain -> 20% chance
+    'Moderate': 50,  # Moderate rain -> 50% chance
+    'High': 80       # High rain -> 80% chance
+}
+
+# Create a new column with numerical percentage values
+PEST_DATA['rain_percentage'] = PEST_DATA['rain'].map(rain_mapping)
+
+# Display the first few rows to verify the conversion
+PEST_DATA[['plant', 'rain', 'rain_percentage']].head()
 
 class WeatherAnalyzer:
     def __init__(self, api_key: str, city: str, data_dir: str = "weather_data"):
@@ -30,6 +54,48 @@ class WeatherAnalyzer:
             
         # Load existing historical data if available
         self._load_historical_data()
+    
+    def calculate_rain_chance(self, weather_data: Dict[str, Any]) -> int:
+        """
+        Calculate chance of rain based on weather parameters
+        
+        Parameters:
+        - weather_data: Weather data dictionary
+        
+        Returns:
+        - Integer from 0-100 representing rain probability
+        """
+        rain_chance = 0
+        
+        # Check weather condition
+        weather_type = weather_data.get("weather_main", "").lower()
+        if "rain" in weather_type or "drizzle" in weather_type:
+            rain_chance += 70
+        elif "shower" in weather_type:
+            rain_chance += 60
+        elif "thunderstorm" in weather_type:
+            rain_chance += 80
+        elif "clouds" in weather_type:
+            rain_chance += 30
+        
+        # Factor in humidity (higher humidity increases rain chance)
+        humidity = weather_data.get("humidity", 0)
+        rain_chance += min(humidity / 5, 20)  # Up to 20 points for humidity
+        
+        # Factor in cloud coverage
+        clouds = weather_data.get("clouds", 0)
+        rain_chance += clouds / 5  # Up to 20 points for full cloud coverage
+        
+        # Pressure factor (lower pressure often means higher rain chance)
+        # Standard pressure is around 1013 hPa
+        pressure = weather_data.get("pressure", 1013)
+        if pressure < 1005:
+            rain_chance += 10
+        elif pressure < 1000:
+            rain_chance += 15
+        
+        # Ensure we stay within 0-100 range
+        return max(0, min(100, int(rain_chance)))
     
     def fetch_current_weather(self) -> Dict[str, Any]:
         """Fetch current weather data from OpenWeather API"""
@@ -58,6 +124,9 @@ class WeatherAnalyzer:
                 "clouds": self.current_data["clouds"]["all"],
                 "city": self.city
             }
+            
+            # Calculate and add rain chance
+            cleaned_data["rain_chance"] = self.calculate_rain_chance(cleaned_data)
             
             # Save this data to historical records
             self._save_weather_data(cleaned_data)
@@ -101,6 +170,10 @@ class WeatherAnalyzer:
                     "wind_speed": item["wind"]["speed"],
                     "wind_direction": item["wind"]["deg"]
                 }
+                
+                # Calculate and add rain chance
+                forecast_item["rain_chance"] = self.calculate_rain_chance(forecast_item)
+                
                 cleaned_forecast["forecast"].append(forecast_item)
             
             # Save only the first X days worth of forecast data
@@ -113,7 +186,7 @@ class WeatherAnalyzer:
         except requests.exceptions.RequestException as e:
             print(f"Error fetching forecast: {e}")
             return {}
-    
+            
     def _save_weather_data(self, data: Dict[str, Any]) -> None:
         """Save weather data to historical records"""
         # Add to in-memory historical data
@@ -320,35 +393,3 @@ class WeatherAnalyzer:
                         report["trend_analysis"]["temperature_outlook"] = "stable"
         
         return report
-
-# Example usage
-def main():
-    # Replace with your API key
-    API_KEY = dotenv_values(".env").get("API_KEY")
-        
-    city = "Coimbatore"
-    
-    analyzer = WeatherAnalyzer(API_KEY, city)
-    
-    # Fetch current weather
-    current = analyzer.fetch_current_weather()
-    print(f"Current temperature in {city}: {current.get('temp', 'N/A')}°C")
-    
-    # Fetch forecast
-    forecast = analyzer.fetch_forecast(days=3)
-    
-    # Generate analysis report
-    report = analyzer.generate_analysis_report(days_historical=7)
-    
-    # Pretty print the report
-    print("\nWeather Analysis Report:")
-    print(json.dumps(report, indent=2))
-    
-    # You can also export the report to a file
-    with open(f"{city}_weather_report.json", "w") as f:
-        json.dump(report, f, indent=2)
-    
-    print(f"\nReport saved to {city}_weather_report.json")
-
-if __name__ == "__main__":
-    main()
