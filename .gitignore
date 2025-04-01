@@ -4,3 +4,4 @@ test/
 train/
 valid/
 Dataset/
+__pycache__/

@@ -15,6 +15,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import matplotlib.pyplot as plt
+from starlette.responses import Response
 
 app = FastAPI()
 
@@ -63,24 +64,10 @@ def preprocessing():
     plant_encoded = encoder.fit_transform(X[['plant']])
     plant_feature_names = encoder.get_feature_names_out(['plant'])
 
-    # create validation set for the plant disease prediction
-    validation_set = tf.keras.utils.image_dataset_from_directory(
-        'valid',
-        labels="inferred",
-        label_mode="categorical",
-        class_names=None,
-        color_mode="rgb",
-        batch_size=32,
-        image_size=(128, 128),
-        shuffle=True,
-        seed=None,
-        validation_split=None,
-        subset=None,
-        interpolation="bilinear",
-        follow_links=False,
-        crop_to_aspect_ratio=False
-    )
-    class_name = validation_set.class_names
+    with open("labels.csv",'r') as f:
+        labels = f.readlines()
+    print(labels)
+    class_name = labels[1:]#validation_set.class_names
 
 preprocessing()
 
@@ -220,13 +207,17 @@ async def upload_image(file: UploadFile = File(...)):
 
 @app.get("/predict-disease/plant-image")
 async def predict_disease_image():
-    image =  await tf.keras.preprocessing.image.load_img("temp.jpg",target_size=(128,128))
+    image = tf.keras.preprocessing.image.load_img("temp.jpg",target_size=(128,128))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
     input_arr = np.array([input_arr])  # Convert single image to a batch.
-    predictions = await DISEASE_PREDICTION_MODEL.predict(input_arr)
+    predictions = DISEASE_PREDICTION_MODEL.predict(input_arr)
     result_index = np.argmax(predictions)
     model_prediction = class_name[result_index]
-    _, encoded_img = cv2.imencode('.jpg', image)
-    image_to_bytes = io.BytesIO(encoded_img.tobytes())
+    # _, encoded_img = cv2.imencode('.jpg', np.array(image))
+    # image_to_bytes = io.BytesIO(encoded_img.tobytes())
 
-    return StreamingResponse(image_to_bytes, media_type="image/jpg", content={'Predictions':predictions})
+    metadata = {
+        "predicted": model_prediction,
+        }
+
+    return metadata
