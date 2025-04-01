@@ -314,5 +314,39 @@
     "clouds": 24,
     "city": "Coimbatore",
     "rain_chance": 50
+  },
+  {
+    "timestamp": "2025-04-01T09:30:23.127738",
+    "fetch_time": 1743480023,
+    "temp": 27.71,
+    "feels_like": 28.74,
+    "temp_min": 27.71,
+    "temp_max": 27.71,
+    "pressure": 1011,
+    "humidity": 57,
+    "wind_speed": 2.32,
+    "wind_direction": 38,
+    "weather_main": "Clouds",
+    "weather_description": "few clouds",
+    "clouds": 13,
+    "city": "Coimbatore",
+    "rain_chance": 44
+  },
+  {
+    "timestamp": "2025-04-01T09:31:46.406948",
+    "fetch_time": 1743480106,
+    "temp": 27.71,
+    "feels_like": 28.74,
+    "temp_min": 27.71,
+    "temp_max": 27.71,
+    "pressure": 1011,
+    "humidity": 57,
+    "wind_speed": 2.32,
+    "wind_direction": 38,
+    "weather_main": "Clouds",
+    "weather_description": "few clouds",
+    "clouds": 13,
+    "city": "Coimbatore",
+    "rain_chance": 44
   }
 ]
