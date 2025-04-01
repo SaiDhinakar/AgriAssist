@@ -67,7 +67,7 @@ def preprocessing():
     with open("labels.csv",'r') as f:
         labels = f.readlines()
     print(labels)
-    class_name = labels[1:]#validation_set.class_names
+    class_name = labels[1:] # validation_set.class_names
 
 preprocessing()
 
@@ -118,11 +118,8 @@ def process_user_query(query):
     model = setup_chat_bot()
     
     prompt = f"""
-
-    USER QUERY:
-    {query}
-    
-    Provide a detailed and helpful response in a proper format that could be simple and understandable.
+        USER QUERY:
+        {query}
     """
     
     try:
@@ -174,7 +171,7 @@ def predict_pest_risk(plant_name, current_weather):
 @app.get("/warnings")
 def warnings():
     warnings = {
-        "Warning":"No warnings!"
+        "Warning":False
     }
     if not PEST_RISK_SUGGESSTION_MODEL:
         warnings["Warning"]="Pest risk suggestion model not loaded!"
@@ -216,8 +213,10 @@ async def predict_disease_image():
     # _, encoded_img = cv2.imencode('.jpg', np.array(image))
     # image_to_bytes = io.BytesIO(encoded_img.tobytes())
 
-    metadata = {
+    data = {
         "predicted": model_prediction,
         }
 
-    return metadata
+    return data
+
+
