@@ -1,0 +1,518 @@
+plant,insect_name,damage,min_temp,max_temp,avg_temp,humidity,rain
+Banana,Panama Wilt (Fusarium),Leaf/frond damage,25,34,29.5,85-79,Low
+Cotton,Whitefly,Shoot tunneling,21,38,29.5,62-74,Moderate
+Potato,Wireworm,Shoot tunneling,26,34,30.0,88-95,High
+Maize,Fall Armyworm,Bud/leaf damage,20,35,27.5,85-95,Low
+Soybean,Soybean Aphid,Root/stem rot,20,36,28.0,50-88,High
+Potato,Wireworm,Fruit infestation,24,35,29.5,70-72,Moderate
+Maize,Stem Borer,Stalk tunneling,20,34,27.0,68-88,Moderate
+Sugarcane,Top Borer,Sap sucking/viruses,24,37,30.5,50-80,Moderate
+Maize,Corn Earworm,Nut damage/yield loss,25,38,31.5,74-86,Low
+Sugarcane,White Grub,Sap sucking/hopper burn,23,37,30.0,87-83,Moderate
+Rice,Yellow Stem Borer,Sap sucking/viruses,24,37,30.5,81-94,High
+Banana,Weevil Borer,Leaf/frond damage,25,40,32.5,86-84,Moderate
+Tomato,Tomato Hornworm,Nut damage/yield loss,21,36,28.5,56-70,Moderate
+Rice,Gall Midge,Leaf defoliation,24,39,31.5,61-85,Low
+Wheat,Aphids,Leaf webbing,21,35,28.0,80-82,High
+Cotton,Cotton Leafworm,Leaf/frond damage,24,36,30.0,77-85,High
+Coconut,Red Palm Weevil,Sap sucking/viruses,25,40,32.5,84-85,High
+Cotton,Pink Bollworm,Shoot tunneling,25,34,29.5,55-81,Low
+Sugarcane,Early Shoot Borer,Bud/leaf damage,25,39,32.0,75-75,High
+Sugarcane,Pyrilla,Leaf webbing,22,39,30.5,74-81,Moderate
+Tomato,Tomato Hornworm,Trunk boring,22,36,29.0,52-70,Moderate
+Maize,Corn Earworm,Leaf defoliation,24,39,31.5,71-76,High
+Wheat,Stem Sawfly,Stalk tunneling,26,40,33.0,56-76,Moderate
+Rice,Brown Plant Hopper,Top leaf damage,20,39,29.5,84-79,Low
+Sugarcane,Top Borer,Leaf webbing,21,36,28.5,74-86,Low
+Cotton,Aphids,Leaf webbing,25,38,31.5,58-83,Low
+Maize,Corn Earworm,Leaf defoliation,23,34,28.5,65-91,Moderate
+Sugarcane,White Grub,Stalk tunneling,25,37,31.0,69-75,Moderate
+Banana,Fruit Fly (Bactrocera),Sap sucking/viruses,26,38,32.0,71-72,Moderate
+Wheat,Stem Sawfly,Nut damage/yield loss,25,39,32.0,57-83,Low
+Sugarcane,Early Shoot Borer,Leaf defoliation,26,35,30.5,56-82,Moderate
+Sugarcane,Early Shoot Borer,Fruit infestation,24,35,29.5,65-70,Low
+Maize,Stem Borer,Root feeding,21,39,30.0,83-87,Low
+Wheat,Armyworm,Trunk boring,23,40,31.5,76-82,High
+Rice,Yellow Stem Borer,Root/stem rot,20,35,27.5,68-70,High
+Maize,Stem Borer,Trunk boring,21,39,30.0,72-91,Low
+Maize,Fall Armyworm,Top leaf damage,24,40,32.0,60-81,High
+Rice,Gall Midge,Stalk tunneling,21,37,29.0,88-76,High
+Wheat,Stem Sawfly,Sap sucking/hopper burn,20,36,28.0,59-95,Low
+Soybean,Bean Leaf Beetle,Leaf defoliation,23,38,30.5,90-71,Low
+Rice,Yellow Stem Borer,Stalk tunneling,24,39,31.5,85-87,Moderate
+Wheat,Stem Sawfly,Trunk boring,23,36,29.5,62-88,Moderate
+Coconut,Leaf Eating Caterpillar,Fruit infestation,23,34,28.5,80-78,Low
+Cotton,Whitefly,Bud/leaf damage,22,38,30.0,70-88,High
+Tomato,Leaf Miner,Trunk boring,24,38,31.0,80-75,Moderate
+Cotton,Pink Bollworm,Stalk tunneling,26,39,32.5,66-90,Moderate
+Cotton,Cotton Leafworm,Leaf/frond damage,21,39,30.0,65-83,Low
+Cotton,Aphids,Top leaf damage,20,40,30.0,74-84,Low
+Banana,Fruit Fly (Bactrocera),Nut damage/yield loss,24,35,29.5,62-90,Low
+Coconut,Red Palm Weevil,Bud/leaf damage,21,38,29.5,71-76,Low
+Potato,Leafhopper,Top leaf damage,25,36,30.5,78-80,Moderate
+Maize,Rootworm,Leaf webbing,25,39,32.0,63-85,High
+Maize,Corn Earworm,Leaf defoliation,25,38,31.5,79-81,High
+Rice,Brown Plant Hopper,Shoot tunneling,25,37,31.0,68-82,Moderate
+Wheat,Armyworm,Trunk boring,22,40,31.0,82-91,Low
+Potato,Wireworm,Fruit infestation,21,34,27.5,75-93,Moderate
+Maize,Fall Armyworm,Trunk boring,20,38,29.0,85-90,Low
+Potato,Leafhopper,Nut damage/yield loss,22,37,29.5,80-93,High
+Potato,Leafhopper,Leaf webbing,23,40,31.5,71-85,Low
+Potato,Wireworm,Leaf/frond damage,23,38,30.5,57-78,Moderate
+Soybean,Corn Earworm,Leaf defoliation,21,39,30.0,55-71,Low
+Soybean,Corn Earworm,Nut damage/yield loss,26,39,32.5,56-77,High
+Banana,Panama Wilt (Fusarium),Nut damage/yield loss,24,35,29.5,61-74,Moderate
+Banana,Aphids,Root/stem rot,26,40,33.0,68-70,Low
+Rice,Gall Midge,Nut damage/yield loss,22,38,30.0,80-77,High
+Tomato,Leaf Miner,Fruit infestation,24,40,32.0,86-75,Moderate
+Coconut,Leaf Eating Caterpillar,Leaf/frond damage,24,37,30.5,63-75,Moderate
+Sugarcane,Pyrilla,Leaf defoliation,26,35,30.5,51-73,High
+Potato,Cutworm,Sap sucking/hopper burn,24,35,29.5,55-84,High
+Tomato,Leaf Miner,Leaf defoliation,20,36,28.0,85-85,Moderate
+Sugarcane,Early Shoot Borer,Sap sucking/viruses,24,35,29.5,87-94,Low
+Sugarcane,White Grub,Root/stem rot,20,34,27.0,72-73,Moderate
+Coconut,Rhinoceros Beetle,Trunk boring,26,40,33.0,50-71,Low
+Cotton,Aphids,Leaf webbing,23,36,29.5,61-78,High
+Coconut,Rhinoceros Beetle,Shoot tunneling,20,35,27.5,59-93,Low
+Coconut,Leaf Eating Caterpillar,Trunk boring,25,40,32.5,62-75,Moderate
+Coconut,Rhinoceros Beetle,Fruit infestation,21,40,30.5,80-83,High
+Sugarcane,White Grub,Nut damage/yield loss,24,38,31.0,62-93,Low
+Banana,Weevil Borer,Leaf defoliation,20,38,29.0,50-95,Low
+Cotton,Pink Bollworm,Root/stem rot,20,34,27.0,54-73,Moderate
+Cotton,Aphids,Leaf defoliation,24,37,30.5,72-78,Low
+Sugarcane,Top Borer,Fruit infestation,22,40,31.0,53-90,Moderate
+Cotton,Whitefly,Root/stem rot,23,40,31.5,52-70,Moderate
+Potato,Cutworm,Nut damage/yield loss,22,39,30.5,84-92,Moderate
+Maize,Stem Borer,Sap sucking/hopper burn,26,39,32.5,82-78,Low
+Cotton,Pink Bollworm,Root feeding,22,38,30.0,87-71,High
+Potato,Leafhopper,Top leaf damage,26,38,32.0,64-70,High
+Potato,Wireworm,Fruit infestation,26,40,33.0,74-94,Moderate
+Coconut,Leaf Eating Caterpillar,Trunk boring,25,39,32.0,78-84,Low
+Potato,Cutworm,Nut damage/yield loss,26,38,32.0,58-80,High
+Wheat,Aphids,Nut damage/yield loss,26,35,30.5,58-81,Moderate
+Rice,Leaf Folder,Trunk boring,20,35,27.5,67-70,Low
+Cotton,Pink Bollworm,Leaf webbing,24,35,29.5,86-74,Low
+Maize,Fall Armyworm,Root/stem rot,25,37,31.0,88-93,Moderate
+Sugarcane,Top Borer,Bud/leaf damage,21,34,27.5,59-72,Moderate
+Maize,Corn Earworm,Sap sucking/hopper burn,21,34,27.5,54-75,Low
+Wheat,Aphids,Nut damage/yield loss,21,40,30.5,64-79,High
+Wheat,Aphids,Root/stem rot,23,39,31.0,53-81,Moderate
+Rice,Yellow Stem Borer,Nut damage/yield loss,24,37,30.5,75-80,Moderate
+Potato,Wireworm,Leaf webbing,21,40,30.5,53-88,Low
+Coconut,Red Palm Weevil,Leaf/frond damage,22,38,30.0,82-90,Low
+Wheat,Stem Sawfly,Bud/leaf damage,21,38,29.5,53-73,Moderate
+Coconut,Coconut Eriophyid Mite,Sap sucking/hopper burn,26,37,31.5,56-78,Low
+Cotton,Whitefly,Leaf defoliation,24,36,30.0,89-81,High
+Coconut,Rhinoceros Beetle,Leaf/frond damage,25,38,31.5,81-78,Moderate
+Coconut,Red Palm Weevil,Fruit infestation,26,37,31.5,51-93,Low
+Cotton,Whitefly,Fruit infestation,26,39,32.5,51-75,High
+Banana,Fruit Fly (Bactrocera),Trunk boring,24,34,29.0,77-70,High
+Wheat,Aphids,Shoot tunneling,22,39,30.5,75-92,High
+Cotton,Aphids,Leaf/frond damage,21,40,30.5,81-78,Moderate
+Wheat,Aphids,Nut damage/yield loss,25,35,30.0,52-84,High
+Rice,Yellow Stem Borer,Nut damage/yield loss,23,39,31.0,69-82,Low
+Rice,Yellow Stem Borer,Fruit infestation,24,37,30.5,65-70,High
+Potato,Wireworm,Leaf defoliation,26,40,33.0,90-88,Low
+Soybean,Bean Leaf Beetle,Bud/leaf damage,26,34,30.0,80-82,Moderate
+Wheat,Aphids,Leaf/frond damage,25,37,31.0,59-70,Low
+Coconut,Rhinoceros Beetle,Bud/leaf damage,20,36,28.0,77-93,Moderate
+Cotton,Whitefly,Fruit infestation,21,36,28.5,52-83,Low
+Potato,Potato Beetle,Top leaf damage,23,35,29.0,76-87,Moderate
+Tomato,Whitefly,Root/stem rot,24,34,29.0,67-93,High
+Potato,Leafhopper,Nut damage/yield loss,20,35,27.5,57-85,High
+Rice,Leaf Folder,Top leaf damage,20,39,29.5,77-71,Moderate
+Wheat,Armyworm,Leaf defoliation,24,37,30.5,51-84,Low
+Tomato,Tomato Hornworm,Leaf defoliation,26,39,32.5,78-86,Moderate
+Tomato,Tomato Hornworm,Bud/leaf damage,26,39,32.5,62-88,High
+Wheat,Armyworm,Stalk tunneling,22,40,31.0,78-88,Moderate
+Potato,Wireworm,Leaf defoliation,21,40,30.5,70-73,Moderate
+Cotton,Whitefly,Shoot tunneling,24,34,29.0,78-74,Low
+Maize,Rootworm,Sap sucking/viruses,24,38,31.0,76-89,Low
+Coconut,Rhinoceros Beetle,Bud/leaf damage,23,40,31.5,75-90,High
+Maize,Stem Borer,Sap sucking/viruses,25,35,30.0,52-94,Low
+Potato,Potato Beetle,Root feeding,26,35,30.5,64-78,High
+Cotton,Pink Bollworm,Leaf/frond damage,20,37,28.5,62-70,Low
+Soybean,Soybean Aphid,Root feeding,26,38,32.0,75-72,High
+Maize,Rootworm,Trunk boring,26,39,32.5,64-80,Moderate
+Soybean,Corn Earworm,Shoot tunneling,25,35,30.0,79-79,Low
+Tomato,Leaf Miner,Nut damage/yield loss,23,37,30.0,74-89,Moderate
+Wheat,Aphids,Nut damage/yield loss,26,34,30.0,84-90,Moderate
+Coconut,Leaf Eating Caterpillar,Fruit infestation,21,36,28.5,51-82,Low
+Tomato,Leaf Miner,Stalk tunneling,20,40,30.0,63-83,Moderate
+Maize,Corn Earworm,Root/stem rot,25,37,31.0,54-88,Moderate
+Rice,Leaf Folder,Sap sucking/hopper burn,24,39,31.5,78-79,High
+Wheat,Armyworm,Top leaf damage,25,35,30.0,59-73,Moderate
+Coconut,Rhinoceros Beetle,Sap sucking/viruses,25,34,29.5,61-90,High
+Rice,Brown Plant Hopper,Leaf defoliation,26,39,32.5,88-78,Low
+Maize,Fall Armyworm,Sap sucking/hopper burn,24,39,31.5,62-72,Low
+Banana,Aphids,Stalk tunneling,24,38,31.0,73-85,Moderate
+Wheat,Hessian Fly,Sap sucking/hopper burn,25,36,30.5,52-91,High
+Cotton,Pink Bollworm,Leaf/frond damage,24,40,32.0,82-77,Low
+Cotton,Whitefly,Root feeding,21,35,28.0,51-90,Moderate
+Tomato,Aphids,Stalk tunneling,22,35,28.5,54-79,High
+Sugarcane,White Grub,Root/stem rot,25,36,30.5,73-79,Low
+Rice,Leaf Folder,Root/stem rot,20,39,29.5,78-80,Moderate
+Banana,Aphids,Stalk tunneling,25,37,31.0,59-74,Low
+Sugarcane,White Grub,Nut damage/yield loss,20,39,29.5,80-75,High
+Sugarcane,Top Borer,Root feeding,22,37,29.5,54-75,Low
+Potato,Cutworm,Top leaf damage,25,40,32.5,55-70,Low
+Wheat,Stem Sawfly,Fruit infestation,23,40,31.5,59-90,Moderate
+Maize,Fall Armyworm,Root feeding,21,37,29.0,90-82,High
+Tomato,Tomato Hornworm,Leaf/frond damage,21,34,27.5,57-78,Moderate
+Coconut,Coconut Eriophyid Mite,Sap sucking/viruses,22,34,28.0,69-80,High
+Wheat,Hessian Fly,Leaf defoliation,23,35,29.0,59-75,Moderate
+Potato,Cutworm,Stalk tunneling,25,35,30.0,68-88,Low
+Soybean,Corn Earworm,Nut damage/yield loss,23,36,29.5,87-72,Low
+Maize,Fall Armyworm,Root/stem rot,25,38,31.5,68-73,Low
+Sugarcane,Top Borer,Nut damage/yield loss,26,37,31.5,89-77,High
+Soybean,Corn Earworm,Top leaf damage,20,35,27.5,88-72,Moderate
+Rice,Brown Plant Hopper,Leaf webbing,21,40,30.5,77-83,High
+Potato,Potato Beetle,Stalk tunneling,21,34,27.5,67-73,Low
+Potato,Leafhopper,Nut damage/yield loss,22,40,31.0,59-77,High
+Wheat,Aphids,Root/stem rot,21,36,28.5,73-86,Moderate
+Wheat,Aphids,Nut damage/yield loss,22,37,29.5,80-91,Low
+Wheat,Stem Sawfly,Bud/leaf damage,24,38,31.0,80-86,Low
+Rice,Yellow Stem Borer,Bud/leaf damage,24,40,32.0,73-78,High
+Soybean,Corn Earworm,Nut damage/yield loss,25,40,32.5,66-84,Moderate
+Wheat,Armyworm,Leaf webbing,21,37,29.0,60-81,Moderate
+Rice,Gall Midge,Shoot tunneling,20,38,29.0,57-84,Moderate
+Rice,Leaf Folder,Root/stem rot,26,34,30.0,64-84,High
+Rice,Yellow Stem Borer,Leaf webbing,23,39,31.0,52-85,Moderate
+Rice,Brown Plant Hopper,Shoot tunneling,20,34,27.0,56-81,Low
+Rice,Gall Midge,Stalk tunneling,21,37,29.0,82-74,Low
+Cotton,Whitefly,Leaf defoliation,24,40,32.0,73-70,High
+Sugarcane,White Grub,Leaf defoliation,21,39,30.0,50-82,High
+Wheat,Hessian Fly,Root/stem rot,26,34,30.0,58-72,High
+Tomato,Tomato Hornworm,Leaf webbing,25,38,31.5,63-82,Low
+Coconut,Coconut Eriophyid Mite,Stalk tunneling,21,40,30.5,68-74,High
+Cotton,Pink Bollworm,Sap sucking/viruses,22,37,29.5,90-79,Moderate
+Cotton,Pink Bollworm,Sap sucking/viruses,25,39,32.0,54-84,Low
+Rice,Leaf Folder,Top leaf damage,25,40,32.5,77-89,High
+Banana,Weevil Borer,Top leaf damage,21,34,27.5,76-76,High
+Sugarcane,White Grub,Top leaf damage,26,37,31.5,71-76,High
+Maize,Stem Borer,Bud/leaf damage,22,39,30.5,55-88,High
+Rice,Yellow Stem Borer,Fruit infestation,24,40,32.0,70-72,High
+Coconut,Rhinoceros Beetle,Bud/leaf damage,23,40,31.5,59-71,Moderate
+Soybean,Bean Leaf Beetle,Nut damage/yield loss,25,40,32.5,83-72,Moderate
+Maize,Stem Borer,Top leaf damage,21,39,30.0,68-87,Moderate
+Banana,Fruit Fly (Bactrocera),Trunk boring,23,40,31.5,77-71,High
+Coconut,Red Palm Weevil,Root/stem rot,26,39,32.5,86-90,Low
+Coconut,Red Palm Weevil,Leaf defoliation,26,34,30.0,86-71,High
+Rice,Yellow Stem Borer,Sap sucking/viruses,23,36,29.5,68-79,High
+Maize,Corn Earworm,Shoot tunneling,23,39,31.0,69-86,High
+Rice,Yellow Stem Borer,Top leaf damage,25,39,32.0,76-79,Moderate
+Tomato,Leaf Miner,Leaf defoliation,23,37,30.0,55-71,Moderate
+Rice,Brown Plant Hopper,Sap sucking/viruses,24,39,31.5,79-81,High
+Tomato,Aphids,Leaf defoliation,20,35,27.5,59-80,Low
+Banana,Aphids,Sap sucking/hopper burn,20,40,30.0,59-81,Low
+Maize,Fall Armyworm,Top leaf damage,25,39,32.0,74-72,High
+Tomato,Whitefly,Fruit infestation,22,34,28.0,65-89,Low
+Soybean,Bean Leaf Beetle,Root/stem rot,23,38,30.5,59-93,Moderate
+Maize,Corn Earworm,Root feeding,24,40,32.0,57-81,Moderate
+Soybean,Cutworm,Leaf defoliation,23,40,31.5,56-84,Moderate
+Banana,Fruit Fly (Bactrocera),Trunk boring,20,40,30.0,64-90,Low
+Potato,Cutworm,Leaf webbing,20,39,29.5,81-86,High
+Maize,Stem Borer,Fruit infestation,22,34,28.0,55-91,High
+Cotton,Whitefly,Leaf defoliation,25,38,31.5,50-80,High
+Potato,Cutworm,Shoot tunneling,20,39,29.5,86-90,High
+Wheat,Aphids,Shoot tunneling,20,39,29.5,67-95,High
+Rice,Leaf Folder,Root feeding,24,35,29.5,69-91,Low
+Sugarcane,Pyrilla,Trunk boring,24,37,30.5,58-84,Low
+Wheat,Armyworm,Leaf webbing,24,35,29.5,76-77,High
+Maize,Fall Armyworm,Leaf defoliation,22,35,28.5,77-92,Moderate
+Soybean,Corn Earworm,Top leaf damage,26,36,31.0,89-73,Moderate
+Tomato,Aphids,Leaf/frond damage,22,39,30.5,86-86,Low
+Sugarcane,White Grub,Sap sucking/viruses,23,35,29.0,82-75,Moderate
+Sugarcane,White Grub,Stalk tunneling,23,37,30.0,81-76,Moderate
+Maize,Rootworm,Stalk tunneling,24,40,32.0,74-73,Moderate
+Wheat,Aphids,Trunk boring,20,36,28.0,78-86,High
+Maize,Stem Borer,Root feeding,25,38,31.5,84-89,High
+Rice,Brown Plant Hopper,Root/stem rot,20,38,29.0,64-81,Moderate
+Tomato,Aphids,Leaf/frond damage,20,37,28.5,58-71,Low
+Potato,Wireworm,Shoot tunneling,20,36,28.0,85-93,Low
+Maize,Corn Earworm,Root/stem rot,25,37,31.0,55-80,Moderate
+Banana,Fruit Fly (Bactrocera),Stalk tunneling,22,35,28.5,82-74,Moderate
+Banana,Panama Wilt (Fusarium),Trunk boring,22,37,29.5,59-84,Low
+Coconut,Rhinoceros Beetle,Sap sucking/hopper burn,21,35,28.0,62-77,Low
+Tomato,Leaf Miner,Fruit infestation,20,35,27.5,50-89,Moderate
+Soybean,Corn Earworm,Leaf/frond damage,24,36,30.0,69-94,Low
+Maize,Rootworm,Stalk tunneling,21,36,28.5,75-79,Low
+Potato,Potato Beetle,Leaf defoliation,22,36,29.0,74-84,Low
+Wheat,Hessian Fly,Leaf defoliation,26,37,31.5,52-86,High
+Maize,Fall Armyworm,Top leaf damage,26,39,32.5,54-88,Moderate
+Banana,Weevil Borer,Leaf defoliation,25,40,32.5,60-72,High
+Cotton,Cotton Leafworm,Leaf webbing,21,40,30.5,74-79,High
+Potato,Cutworm,Trunk boring,24,37,30.5,53-84,High
+Rice,Leaf Folder,Nut damage/yield loss,26,34,30.0,75-70,High
+Coconut,Rhinoceros Beetle,Shoot tunneling,21,37,29.0,83-91,Low
+Rice,Brown Plant Hopper,Stalk tunneling,26,39,32.5,83-72,High
+Tomato,Tomato Hornworm,Stalk tunneling,26,40,33.0,77-89,High
+Wheat,Armyworm,Leaf webbing,24,38,31.0,54-82,Low
+Wheat,Stem Sawfly,Sap sucking/hopper burn,20,40,30.0,67-74,High
+Rice,Yellow Stem Borer,Leaf/frond damage,21,36,28.5,90-93,Moderate
+Maize,Corn Earworm,Root feeding,20,38,29.0,85-95,Low
+Banana,Fruit Fly (Bactrocera),Shoot tunneling,23,36,29.5,56-77,Low
+Potato,Cutworm,Root/stem rot,22,35,28.5,71-72,Moderate
+Banana,Aphids,Nut damage/yield loss,20,35,27.5,65-86,Low
+Wheat,Stem Sawfly,Nut damage/yield loss,21,34,27.5,63-74,High
+Coconut,Rhinoceros Beetle,Sap sucking/viruses,25,36,30.5,57-81,Moderate
+Banana,Aphids,Root feeding,21,34,27.5,50-76,High
+Potato,Cutworm,Leaf/frond damage,25,36,30.5,60-93,Low
+Rice,Brown Plant Hopper,Fruit infestation,25,40,32.5,84-85,Low
+Cotton,Aphids,Leaf/frond damage,22,37,29.5,73-71,Low
+Rice,Leaf Folder,Leaf/frond damage,21,37,29.0,74-80,High
+Maize,Stem Borer,Fruit infestation,23,38,30.5,79-95,Low
+Coconut,Rhinoceros Beetle,Nut damage/yield loss,23,35,29.0,59-71,High
+Soybean,Bean Leaf Beetle,Leaf webbing,26,36,31.0,90-74,Moderate
+Cotton,Pink Bollworm,Root feeding,22,36,29.0,81-88,High
+Sugarcane,Pyrilla,Nut damage/yield loss,21,37,29.0,79-73,High
+Wheat,Stem Sawfly,Leaf defoliation,24,39,31.5,84-71,Low
+Cotton,Whitefly,Fruit infestation,20,37,28.5,86-82,Moderate
+Sugarcane,White Grub,Top leaf damage,22,35,28.5,68-84,High
+Rice,Gall Midge,Root/stem rot,20,39,29.5,55-95,Low
+Cotton,Aphids,Top leaf damage,24,39,31.5,56-74,Moderate
+Sugarcane,White Grub,Stalk tunneling,22,40,31.0,51-86,High
+Rice,Brown Plant Hopper,Root feeding,20,39,29.5,52-86,High
+Rice,Leaf Folder,Leaf/frond damage,23,34,28.5,53-73,High
+Banana,Aphids,Nut damage/yield loss,21,34,27.5,68-79,High
+Coconut,Red Palm Weevil,Shoot tunneling,22,37,29.5,52-83,Moderate
+Maize,Stem Borer,Stalk tunneling,25,39,32.0,54-85,Low
+Sugarcane,White Grub,Trunk boring,20,35,27.5,76-89,Moderate
+Soybean,Soybean Aphid,Root/stem rot,26,37,31.5,51-91,Low
+Banana,Panama Wilt (Fusarium),Sap sucking/hopper burn,21,35,28.0,50-78,High
+Soybean,Cutworm,Trunk boring,26,38,32.0,59-89,Moderate
+Sugarcane,Top Borer,Fruit infestation,25,36,30.5,82-75,High
+Wheat,Stem Sawfly,Leaf webbing,23,39,31.0,59-88,Low
+Rice,Brown Plant Hopper,Nut damage/yield loss,25,38,31.5,64-93,Low
+Tomato,Aphids,Trunk boring,24,40,32.0,74-83,High
+Coconut,Red Palm Weevil,Trunk boring,21,35,28.0,90-82,Moderate
+Coconut,Coconut Eriophyid Mite,Trunk boring,26,39,32.5,68-95,High
+Coconut,Leaf Eating Caterpillar,Leaf/frond damage,21,34,27.5,90-73,Moderate
+Tomato,Whitefly,Sap sucking/hopper burn,21,37,29.0,53-78,High
+Wheat,Armyworm,Sap sucking/hopper burn,22,34,28.0,56-82,Low
+Tomato,Leaf Miner,Trunk boring,26,40,33.0,55-74,High
+Tomato,Aphids,Fruit infestation,24,39,31.5,52-80,High
+Sugarcane,Pyrilla,Sap sucking/viruses,22,40,31.0,88-90,High
+Coconut,Leaf Eating Caterpillar,Sap sucking/viruses,23,39,31.0,81-89,High
+Wheat,Hessian Fly,Root/stem rot,21,40,30.5,86-75,Low
+Potato,Potato Beetle,Nut damage/yield loss,23,37,30.0,51-81,Low
+Potato,Wireworm,Nut damage/yield loss,20,36,28.0,66-80,Moderate
+Coconut,Rhinoceros Beetle,Root/stem rot,24,38,31.0,66-83,Moderate
+Banana,Panama Wilt (Fusarium),Bud/leaf damage,21,38,29.5,71-88,Moderate
+Rice,Brown Plant Hopper,Root feeding,21,35,28.0,79-73,Moderate
+Banana,Aphids,Sap sucking/hopper burn,21,35,28.0,74-93,High
+Maize,Stem Borer,Leaf defoliation,25,40,32.5,62-82,High
+Rice,Leaf Folder,Root/stem rot,23,37,30.0,60-88,Moderate
+Potato,Wireworm,Nut damage/yield loss,23,40,31.5,74-94,Low
+Soybean,Bean Leaf Beetle,Stalk tunneling,26,36,31.0,81-80,Low
+Wheat,Armyworm,Bud/leaf damage,20,38,29.0,66-83,Moderate
+Sugarcane,Early Shoot Borer,Fruit infestation,25,35,30.0,50-93,High
+Banana,Aphids,Nut damage/yield loss,22,34,28.0,89-92,High
+Banana,Weevil Borer,Shoot tunneling,24,37,30.5,71-88,Moderate
+Soybean,Cutworm,Sap sucking/viruses,26,35,30.5,66-77,High
+Cotton,Whitefly,Root/stem rot,24,39,31.5,65-92,Moderate
+Banana,Weevil Borer,Top leaf damage,22,40,31.0,82-95,High
+Sugarcane,Top Borer,Trunk boring,20,36,28.0,78-86,High
+Maize,Corn Earworm,Top leaf damage,24,34,29.0,60-89,Low
+Banana,Panama Wilt (Fusarium),Leaf/frond damage,24,37,30.5,56-84,High
+Potato,Wireworm,Leaf defoliation,20,39,29.5,62-76,High
+Banana,Weevil Borer,Sap sucking/hopper burn,24,37,30.5,68-71,Low
+Coconut,Leaf Eating Caterpillar,Leaf webbing,22,40,31.0,75-87,Moderate
+Wheat,Hessian Fly,Leaf defoliation,24,36,30.0,72-73,Low
+Rice,Gall Midge,Root feeding,22,40,31.0,72-93,Moderate
+Soybean,Soybean Aphid,Root feeding,21,38,29.5,60-91,High
+Rice,Yellow Stem Borer,Leaf webbing,22,36,29.0,50-79,High
+Potato,Wireworm,Trunk boring,23,39,31.0,69-85,High
+Tomato,Whitefly,Leaf webbing,21,38,29.5,63-76,Moderate
+Wheat,Armyworm,Sap sucking/hopper burn,22,39,30.5,50-90,High
+Banana,Panama Wilt (Fusarium),Leaf/frond damage,23,36,29.5,56-87,High
+Coconut,Coconut Eriophyid Mite,Trunk boring,21,37,29.0,71-92,High
+Potato,Potato Beetle,Leaf defoliation,23,34,28.5,52-80,Low
+Banana,Panama Wilt (Fusarium),Top leaf damage,23,36,29.5,83-79,High
+Tomato,Aphids,Root feeding,24,37,30.5,62-83,High
+Wheat,Aphids,Top leaf damage,22,39,30.5,58-81,Moderate
+Soybean,Cutworm,Leaf webbing,23,40,31.5,61-86,Moderate
+Rice,Yellow Stem Borer,Top leaf damage,20,37,28.5,75-89,Moderate
+Wheat,Aphids,Leaf/frond damage,24,39,31.5,56-73,Moderate
+Maize,Rootworm,Sap sucking/hopper burn,21,38,29.5,54-95,Low
+Potato,Cutworm,Stalk tunneling,23,39,31.0,59-94,High
+Cotton,Aphids,Fruit infestation,22,37,29.5,72-73,High
+Potato,Wireworm,Top leaf damage,21,35,28.0,86-77,Low
+Potato,Wireworm,Shoot tunneling,20,34,27.0,57-81,Low
+Sugarcane,White Grub,Sap sucking/viruses,26,36,31.0,73-73,Low
+Sugarcane,Early Shoot Borer,Leaf defoliation,25,35,30.0,83-84,Moderate
+Coconut,Coconut Eriophyid Mite,Fruit infestation,23,37,30.0,86-72,Low
+Tomato,Leaf Miner,Leaf/frond damage,22,34,28.0,57-71,Low
+Rice,Yellow Stem Borer,Fruit infestation,22,35,28.5,79-95,Moderate
+Banana,Panama Wilt (Fusarium),Root feeding,23,34,28.5,55-93,Low
+Coconut,Leaf Eating Caterpillar,Root feeding,24,39,31.5,88-90,Low
+Sugarcane,Early Shoot Borer,Leaf webbing,20,37,28.5,71-91,Moderate
+Wheat,Aphids,Trunk boring,20,36,28.0,86-70,High
+Coconut,Red Palm Weevil,Fruit infestation,25,35,30.0,64-86,Moderate
+Cotton,Cotton Leafworm,Sap sucking/viruses,25,38,31.5,90-92,Moderate
+Tomato,Whitefly,Sap sucking/viruses,24,35,29.5,76-82,Low
+Banana,Aphids,Root feeding,21,36,28.5,89-94,High
+Maize,Rootworm,Nut damage/yield loss,23,36,29.5,56-81,High
+Rice,Gall Midge,Bud/leaf damage,20,35,27.5,71-74,Low
+Maize,Fall Armyworm,Nut damage/yield loss,23,40,31.5,82-79,Low
+Banana,Weevil Borer,Sap sucking/hopper burn,24,39,31.5,88-81,Low
+Sugarcane,Pyrilla,Shoot tunneling,21,36,28.5,83-74,Low
+Rice,Yellow Stem Borer,Bud/leaf damage,22,39,30.5,83-72,Low
+Rice,Yellow Stem Borer,Stalk tunneling,22,38,30.0,82-84,High
+Sugarcane,White Grub,Root/stem rot,24,40,32.0,75-71,Low
+Coconut,Leaf Eating Caterpillar,Top leaf damage,25,39,32.0,89-85,Moderate
+Soybean,Corn Earworm,Trunk boring,25,35,30.0,60-90,Low
+Wheat,Armyworm,Root/stem rot,25,35,30.0,75-75,Low
+Maize,Corn Earworm,Trunk boring,22,35,28.5,74-94,Moderate
+Banana,Panama Wilt (Fusarium),Leaf/frond damage,24,35,29.5,64-79,High
+Coconut,Coconut Eriophyid Mite,Fruit infestation,21,36,28.5,90-78,Low
+Coconut,Rhinoceros Beetle,Leaf webbing,26,38,32.0,83-91,High
+Cotton,Cotton Leafworm,Bud/leaf damage,25,39,32.0,79-70,High
+Coconut,Coconut Eriophyid Mite,Shoot tunneling,22,40,31.0,84-78,Low
+Rice,Gall Midge,Leaf webbing,21,40,30.5,54-72,Low
+Maize,Corn Earworm,Shoot tunneling,20,39,29.5,87-92,Moderate
+Sugarcane,Pyrilla,Stalk tunneling,25,35,30.0,52-81,Moderate
+Rice,Gall Midge,Fruit infestation,26,37,31.5,65-94,Low
+Maize,Corn Earworm,Bud/leaf damage,26,37,31.5,74-87,High
+Maize,Fall Armyworm,Nut damage/yield loss,21,37,29.0,65-89,Moderate
+Soybean,Corn Earworm,Fruit infestation,24,34,29.0,85-87,Low
+Coconut,Red Palm Weevil,Leaf webbing,20,35,27.5,71-93,High
+Rice,Yellow Stem Borer,Shoot tunneling,23,36,29.5,71-83,Moderate
+Cotton,Whitefly,Sap sucking/hopper burn,24,38,31.0,68-91,Low
+Rice,Gall Midge,Top leaf damage,26,37,31.5,76-74,Moderate
+Coconut,Leaf Eating Caterpillar,Nut damage/yield loss,23,35,29.0,73-86,High
+Cotton,Whitefly,Leaf webbing,26,36,31.0,83-77,High
+Sugarcane,White Grub,Nut damage/yield loss,21,37,29.0,81-78,High
+Maize,Fall Armyworm,Nut damage/yield loss,24,36,30.0,80-87,Low
+Soybean,Bean Leaf Beetle,Sap sucking/viruses,22,40,31.0,88-75,Low
+Banana,Fruit Fly (Bactrocera),Top leaf damage,20,40,30.0,68-75,Moderate
+Cotton,Cotton Leafworm,Nut damage/yield loss,23,38,30.5,76-82,Moderate
+Potato,Cutworm,Shoot tunneling,20,35,27.5,83-94,Low
+Sugarcane,Pyrilla,Sap sucking/hopper burn,22,40,31.0,66-77,Low
+Wheat,Aphids,Leaf/frond damage,23,35,29.0,60-74,High
+Wheat,Armyworm,Fruit infestation,25,38,31.5,55-75,Moderate
+Potato,Cutworm,Trunk boring,23,34,28.5,71-89,Low
+Banana,Aphids,Trunk boring,21,39,30.0,87-74,High
+Potato,Potato Beetle,Nut damage/yield loss,23,34,28.5,62-78,Moderate
+Banana,Panama Wilt (Fusarium),Nut damage/yield loss,26,40,33.0,84-85,Low
+Wheat,Aphids,Leaf defoliation,20,40,30.0,83-90,Moderate
+Coconut,Coconut Eriophyid Mite,Root feeding,22,39,30.5,56-90,Moderate
+Maize,Fall Armyworm,Leaf defoliation,23,35,29.0,59-94,Moderate
+Rice,Gall Midge,Sap sucking/viruses,26,38,32.0,56-93,Moderate
+Wheat,Aphids,Stalk tunneling,23,40,31.5,76-84,High
+Rice,Brown Plant Hopper,Shoot tunneling,21,37,29.0,55-91,High
+Wheat,Aphids,Nut damage/yield loss,24,35,29.5,80-84,Moderate
+Cotton,Cotton Leafworm,Nut damage/yield loss,20,35,27.5,50-80,Low
+Sugarcane,Pyrilla,Leaf webbing,24,34,29.0,89-73,Moderate
+Soybean,Corn Earworm,Nut damage/yield loss,26,40,33.0,54-71,Low
+Sugarcane,White Grub,Leaf/frond damage,23,38,30.5,53-78,High
+Rice,Leaf Folder,Fruit infestation,25,36,30.5,62-89,High
+Soybean,Corn Earworm,Fruit infestation,20,40,30.0,71-77,High
+Soybean,Cutworm,Sap sucking/viruses,22,36,29.0,70-76,High
+Rice,Gall Midge,Leaf defoliation,22,39,30.5,64-90,Moderate
+Coconut,Red Palm Weevil,Leaf webbing,22,38,30.0,61-92,High
+Coconut,Coconut Eriophyid Mite,Leaf/frond damage,26,37,31.5,76-79,Moderate
+Potato,Potato Beetle,Nut damage/yield loss,21,35,28.0,90-79,High
+Maize,Rootworm,Fruit infestation,26,34,30.0,80-95,Moderate
+Banana,Weevil Borer,Stalk tunneling,21,36,28.5,57-71,High
+Rice,Gall Midge,Root/stem rot,21,37,29.0,50-76,Low
+Potato,Potato Beetle,Trunk boring,25,40,32.5,54-71,Moderate
+Banana,Aphids,Stalk tunneling,20,38,29.0,54-93,Moderate
+Coconut,Leaf Eating Caterpillar,Top leaf damage,24,40,32.0,52-70,Moderate
+Maize,Stem Borer,Nut damage/yield loss,24,35,29.5,57-91,Moderate
+Rice,Gall Midge,Stalk tunneling,26,35,30.5,82-84,Low
+Coconut,Red Palm Weevil,Sap sucking/viruses,25,37,31.0,71-79,High
+Rice,Yellow Stem Borer,Sap sucking/viruses,23,38,30.5,68-84,Moderate
+Maize,Rootworm,Leaf defoliation,24,34,29.0,73-93,Moderate
+Potato,Leafhopper,Root feeding,23,38,30.5,86-90,Low
+Cotton,Whitefly,Shoot tunneling,22,37,29.5,54-93,High
+Maize,Stem Borer,Trunk boring,24,36,30.0,80-73,Low
+Wheat,Armyworm,Root feeding,20,36,28.0,75-71,Low
+Sugarcane,Pyrilla,Leaf/frond damage,20,36,28.0,58-81,Low
+Tomato,Tomato Hornworm,Fruit infestation,22,38,30.0,89-72,Moderate
+Tomato,Leaf Miner,Leaf defoliation,20,38,29.0,89-82,Moderate
+Cotton,Whitefly,Shoot tunneling,26,36,31.0,59-92,High
+Potato,Leafhopper,Shoot tunneling,25,36,30.5,72-71,Low
+Cotton,Pink Bollworm,Top leaf damage,23,39,31.0,52-85,High
+Sugarcane,White Grub,Top leaf damage,21,36,28.5,75-76,Moderate
+Coconut,Coconut Eriophyid Mite,Leaf defoliation,26,40,33.0,74-95,Low
+Rice,Leaf Folder,Leaf/frond damage,25,39,32.0,62-87,Moderate
+Wheat,Aphids,Root feeding,26,35,30.5,62-78,Moderate
+Banana,Aphids,Nut damage/yield loss,20,37,28.5,73-74,Low
+Wheat,Aphids,Leaf webbing,23,36,29.5,74-95,Moderate
+Coconut,Coconut Eriophyid Mite,Sap sucking/hopper burn,21,38,29.5,85-85,Low
+Tomato,Aphids,Root/stem rot,26,36,31.0,54-87,High
+Rice,Leaf Folder,Root/stem rot,24,40,32.0,73-86,High
+Potato,Cutworm,Leaf defoliation,25,38,31.5,72-91,High
+Tomato,Aphids,Sap sucking/viruses,25,40,32.5,61-73,High
+Wheat,Stem Sawfly,Fruit infestation,26,35,30.5,52-75,Low
+Soybean,Corn Earworm,Sap sucking/hopper burn,24,36,30.0,69-86,Moderate
+Potato,Wireworm,Nut damage/yield loss,26,40,33.0,81-84,Moderate
+Potato,Cutworm,Sap sucking/viruses,23,36,29.5,79-94,High
+Rice,Yellow Stem Borer,Stalk tunneling,20,34,27.0,56-81,Moderate
+Wheat,Hessian Fly,Leaf webbing,24,34,29.0,54-74,High
+Cotton,Aphids,Leaf/frond damage,26,35,30.5,68-95,Moderate
+Tomato,Leaf Miner,Top leaf damage,21,37,29.0,53-88,Low
+Cotton,Cotton Leafworm,Bud/leaf damage,26,35,30.5,67-79,High
+Banana,Weevil Borer,Leaf/frond damage,23,36,29.5,90-90,Low
+Cotton,Aphids,Stalk tunneling,25,40,32.5,53-91,Moderate
+Maize,Stem Borer,Top leaf damage,23,37,30.0,75-87,High
+Maize,Stem Borer,Leaf webbing,23,39,31.0,81-74,Moderate
+Cotton,Aphids,Shoot tunneling,24,36,30.0,55-87,Low
+Soybean,Bean Leaf Beetle,Leaf/frond damage,24,40,32.0,53-92,Low
+Wheat,Stem Sawfly,Top leaf damage,20,40,30.0,71-73,High
+Coconut,Coconut Eriophyid Mite,Leaf/frond damage,21,35,28.0,82-87,Moderate
+Tomato,Whitefly,Leaf webbing,25,35,30.0,55-84,Moderate
+Banana,Aphids,Root/stem rot,24,36,30.0,70-73,Low
+Wheat,Armyworm,Root feeding,26,37,31.5,52-75,Low
+Wheat,Armyworm,Leaf defoliation,24,35,29.5,86-84,High
+Banana,Aphids,Root/stem rot,25,35,30.0,71-94,Low
+Maize,Rootworm,Shoot tunneling,21,34,27.5,62-76,Low
+Sugarcane,Pyrilla,Fruit infestation,21,39,30.0,85-74,Low
+Sugarcane,Top Borer,Sap sucking/hopper burn,22,37,29.5,74-73,High
+Cotton,Pink Bollworm,Fruit infestation,24,39,31.5,79-80,Low
+Wheat,Hessian Fly,Leaf defoliation,21,37,29.0,59-71,High
+Sugarcane,Top Borer,Leaf webbing,20,35,27.5,61-89,Moderate
+Potato,Cutworm,Leaf webbing,24,34,29.0,85-74,High
+Banana,Weevil Borer,Bud/leaf damage,25,34,29.5,73-76,Moderate
+Soybean,Cutworm,Shoot tunneling,25,35,30.0,55-87,Low
+Tomato,Leaf Miner,Bud/leaf damage,22,35,28.5,52-80,Low
+Cotton,Aphids,Sap sucking/viruses,21,36,28.5,72-90,Moderate
+Cotton,Whitefly,Root feeding,25,35,30.0,83-80,Low
+Tomato,Aphids,Leaf webbing,20,35,27.5,66-95,Low
+Maize,Stem Borer,Stalk tunneling,24,36,30.0,69-80,Moderate
+Potato,Cutworm,Leaf/frond damage,20,37,28.5,75-72,High
+Banana,Aphids,Root/stem rot,25,35,30.0,63-89,High
+Sugarcane,Top Borer,Shoot tunneling,20,40,30.0,72-95,Moderate
+Wheat,Hessian Fly,Root/stem rot,23,38,30.5,65-93,High
+Cotton,Cotton Leafworm,Nut damage/yield loss,21,35,28.0,75-84,High
+Rice,Brown Plant Hopper,Sap sucking/viruses,24,35,29.5,84-79,Moderate
+Wheat,Armyworm,Trunk boring,24,36,30.0,57-78,Low
+Banana,Aphids,Bud/leaf damage,24,39,31.5,57-74,Moderate
+Sugarcane,Top Borer,Leaf defoliation,26,40,33.0,55-79,Moderate
+Banana,Aphids,Leaf/frond damage,22,36,29.0,66-92,High
+Potato,Cutworm,Top leaf damage,20,40,30.0,69-70,Low
+Cotton,Aphids,Leaf webbing,26,35,30.5,56-74,Low
+Soybean,Soybean Aphid,Leaf/frond damage,22,38,30.0,63-74,High
+Soybean,Soybean Aphid,Nut damage/yield loss,20,38,29.0,50-70,Low
+Potato,Cutworm,Shoot tunneling,20,39,29.5,56-80,High
+Banana,Fruit Fly (Bactrocera),Stalk tunneling,21,37,29.0,90-84,Low
+Maize,Fall Armyworm,Top leaf damage,26,36,31.0,63-71,Low
+Rice,Leaf Folder,Nut damage/yield loss,24,36,30.0,79-72,Low
+Brinjal,Shoot and Fruit Borer,Bores into fruits and shoots,22,36,29.0,60-80,Moderate
+Brinjal,Jassids,Leaf curling & yellowing,20,35,27.5,50-70,Low
+Brinjal,Mites,Leaf discoloration,24,38,31.0,40-60,Low
+Onion,Thrips,Silver streaks on leaves,20,35,27.5,50-70,Low
+Onion,Stem Borer,Stem tunneling,22,36,29.0,60-80,Moderate
+Onion,Onion Maggot,Larvae attack roots,18,32,25.0,60-85,Moderate
+Tomato,Whitefly,"Sap sucking, virus transmission",22,35,28.5,60-80,Moderate
+Tomato,Leaf Miner,Leaf tunneling,20,35,27.5,50-70,Low
+Chili,Aphids,"Sap sucking, virus carrier",24,38,31.0,60-80,Moderate
+Chili,Thrips,Leaf curling and silvering,20,35,27.5,50-70,Low
+Turmeric,Rhizome Fly,Damage to rhizomes,22,35,28.5,60-80,Moderate
+Turmeric,Shoot Borer,Shoot wilting,24,38,31.0,70-90,High
+Sugarcane,Internode Borer,Bores into internodes,24,36,30.0,60-80,Moderate
+Paddy,Rice Hispa,Leaf scrapping,22,35,28.5,60-80,Moderate
+Groundnut,Leaf Miner,Leaf tunneling,20,34,27.0,50-70,Low
+Groundnut,Red Hairy Caterpillar,Leaf defoliation,24,38,31.0,60-85,High
+Coconut,Black Headed Caterpillar,Leaf defoliation,25,35,30.0,70-90,Moderate
