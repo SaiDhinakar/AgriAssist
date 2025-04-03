@@ -292,5 +292,5 @@ def generate_gemini_response(pest_name: str, pesticide: str):
 
     response = gemini_model.generate_content(prompt)
     return {"ai_response": response.text}
-
+#
 # Run using: uvicorn filename:app --reload
