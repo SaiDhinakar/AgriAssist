@@ -215,82 +215,57 @@ def predict_pest(plant_name: str):
     response = predict_pest_risk(plant_name, fetch_current_weather_data())
     return response
 
+# @app.post("/upload/plant-image")
+# async def upload_image(file: UploadFile = File(...)):
+#     image_bytes = await file.read()
+#     pil_image = Image.open(io.BytesIO(image_bytes))
+#     image = cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)
+#     pil_image.save("temp.jpg")
+#     image = tf.keras.preprocessing.image.load_img("temp.jpg",target_size=(128,128))
+#     input_arr = tf.keras.preprocessing.image.img_to_array(image)
+#     input_arr = np.array([input_arr])  # Convert single image to a batch.
+#     predictions = DISEASE_PREDICTION_MODEL.predict(input_arr)
+#     result_index = np.argmax(predictions)
+#     model_prediction = class_name[result_index]
+    
+#     data = {
+#         "predicted": model_prediction,
+#         }
+
+#     return data
+
+
 @app.post("/upload/plant-image")
 async def upload_image(file: UploadFile = File(...)):
     image_bytes = await file.read()
     pil_image = Image.open(io.BytesIO(image_bytes))
     image = cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)
     pil_image.save("temp.jpg")
+
+@app.get("/predict-disease/plant-image")
+async def predict_disease_image():
     image = tf.keras.preprocessing.image.load_img("temp.jpg",target_size=(128,128))
     input_arr = tf.keras.preprocessing.image.img_to_array(image)
     input_arr = np.array([input_arr])  # Convert single image to a batch.
     predictions = DISEASE_PREDICTION_MODEL.predict(input_arr)
     result_index = np.argmax(predictions)
     model_prediction = class_name[result_index]
-    # _, encoded_img = cv2.imencode('.jpg', np.array(image))
-    # image_to_bytes = io.BytesIO(encoded_img.tobytes())
+
+    # Pre text context: interact with Gemini to fetch the reason and solution for the detected disease
+    prompt = f"""
+        The plant disease detected is: {model_prediction}.
+        Please provide a very short explanation (2-3 sentences) about why this disease occurs, including the underlying factors.
+        Additionally, offer a brief suggestion on how to manage or treat this disease with appropriate safety precautions.
+        Include context for a disease solution, such as recommending a specific fertilizer or outlining a process to cure the disease.
+        """
+    response = gemini_model.generate_content(prompt)
+    disease_explanation = response.text
 
     data = {
-        "predicted": model_prediction,
+            "predicted": model_prediction,
+            "explanation": disease_explanation.strip()
         }
 
     return data
 
 
-class PestQuery(BaseModel):
-    query: str
-
-@app.post("/retrieve_pest_data")
-def retrieve_pest_data(query: PestQuery):
-    """Retrieve best matching pest and its pesticide from ChromaDB."""
-    query_embedding = model.encode(query.query).tolist()
-    results = collection.query(query_embeddings=[query_embedding], n_results=1)
-
-    if results["ids"] and results["ids"][0]:  # Ensure a valid result exists
-        matched_pest = results["metadatas"][0][0].get("pest_name", "Unknown Pest")
-        pesticide = results["metadatas"][0][0].get("pesticide", "No pesticide available")
-        """Generate AI-powered explanation using Gemini 2.0 Flash."""
-        prompt = f"""
-            The user has identified a pest: {query}.
-            - Recommended pesticide: {pesticide}.
-
-            Give a **very short** and precise summary (2-3 sentences) about why this pesticide is effective for {query}.
-            Provide safety precautions and the best method to apply it.
-            """
-
-        response = gemini_model.generate_content(prompt)
-        return {"pest_name": matched_pest, "pesticide": pesticide, "ai_response": response.text}
-
-    raise HTTPException(status_code=404, detail="No matching pest found.")
-
-
-@app.get("/get_pest_image/{pest_name}")
-def get_pest_image(pest_name: str):
-    """Fetch and return pest image from dataset folder as an image response."""
-    pest_folder = os.path.join(PEST_IMAGE_DIR, pest_name)
-
-    if os.path.exists(pest_folder):
-        images = os.listdir(pest_folder)
-        if images:
-            image_path = os.path.join(pest_folder, images[0])
-            with open(image_path, "rb") as image_file:
-                return Response(content=image_file.read(), media_type="image/jpeg")
-
-    raise HTTPException(status_code=404, detail="No image found for this pest.")
-
-
-@app.post("/generate_gemini_response")
-def generate_gemini_response(pest_name: str, pesticide: str):
-    """Generate AI-powered explanation using Gemini 2.0 Flash."""
-    prompt = f"""
-    The user has identified a pest: {pest_name}.
-    - Recommended pesticide: {pesticide}.
-
-    Give a **very short** and precise summary (2-3 sentences) about why this pesticide is effective for {pest_name}.
-    Provide safety precautions and the best method to apply it.
-    """
-
-    response = gemini_model.generate_content(prompt)
-    return {"ai_response": response.text}
-
-# Run using: uvicorn filename:app --reload
