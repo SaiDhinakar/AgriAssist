@@ -13,6 +13,7 @@ from PIL import Image
 import io
 import numpy as np
 import tensorflow as tf
+from tensorflow.keras.utils import load_img, img_to_array  
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import matplotlib.pyplot as plt
 from starlette.responses import Response
@@ -31,8 +32,7 @@ app = FastAPI()
 
 WEATHER_API = dotenv_values(".env").get("WEATHER_API_KEY")
 CHAT_BOT_API = dotenv_values(".env").get("GEMINI_API_KEY")
-GEMINI_API_KEY = dotenv_values(".env").get("GEMINI_API_KEY")
-genai.configure(api_key=GEMINI_API_KEY)
+genai.configure(api_key=CHAT_BOT_API)
 gemini_model = genai.GenerativeModel("models/gemini-2.0-flash")
 # Load the embedding model
 model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
@@ -187,6 +187,29 @@ def predict_pest_risk(plant_name, current_weather):
     print(results)
     return results
 
+def predict():
+    image = load_img("temp.jpg", target_size=(128, 128))
+    input_arr = img_to_array(image)
+    input_arr = np.array([input_arr])  # Convert single image to a batch.
+    predictions = DISEASE_PREDICTION_MODEL.predict(input_arr)
+    result_index = np.argmax(predictions)
+    model_prediction = class_name[result_index]
+
+    prompt = f"""
+        The plant disease detected is: {model_prediction}.
+        Please provide a very short explanation (2-3 sentences) about why this disease occurs, including the underlying factors.
+        Additionally, offer a brief suggestion on how to manage or treat this disease with appropriate safety precautions.
+        Include context for a disease solution, such as recommending a specific fertilizer or outlining a process to cure the disease.
+        """
+    response = gemini_model.generate_content(prompt)
+    disease_explanation = response.text
+
+    data = {
+        "predicted": model_prediction,
+        "explanation": disease_explanation.strip()
+    }
+
+    return data
 
 @app.get("/warnings")
 def warnings():
@@ -215,32 +238,29 @@ def predict_pest(plant_name: str):
     response = predict_pest_risk(plant_name, fetch_current_weather_data())
     return response
 
-# @app.post("/upload/plant-image")
-# async def upload_image(file: UploadFile = File(...)):
-#     image_bytes = await file.read()
-#     pil_image = Image.open(io.BytesIO(image_bytes))
-#     image = cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)
-#     pil_image.save("temp.jpg")
-#     image = tf.keras.preprocessing.image.load_img("temp.jpg",target_size=(128,128))
-#     input_arr = tf.keras.preprocessing.image.img_to_array(image)
-#     input_arr = np.array([input_arr])  # Convert single image to a batch.
-#     predictions = DISEASE_PREDICTION_MODEL.predict(input_arr)
-#     result_index = np.argmax(predictions)
-#     model_prediction = class_name[result_index]
-    
-#     data = {
-#         "predicted": model_prediction,
-#         }
-
-#     return data
-
 
 @app.post("/upload/plant-image")
 async def upload_image(file: UploadFile = File(...)):
-    image_bytes = await file.read()
-    pil_image = Image.open(io.BytesIO(image_bytes))
-    image = cv2.cvtColor(np.array(pil_image), cv2.COLOR_RGB2BGR)
-    pil_image.save("temp.jpg")
+    try:
+        # Read image bytes and create PIL image
+        image_bytes = await file.read()
+        pil_image = Image.open(io.BytesIO(image_bytes))
+        # Optionally, process or convert the PIL image if needed
+        
+        # Save the image as 'temp.jpg' for disease prediction processing
+        pil_image.save("temp.jpg")
+        
+        # Call the disease prediction function from DiseaseModel.py
+        disease_result = predict()
+        
+        return {
+            "status": "success",
+            "message": "Image uploaded and processed successfully.",
+            "disease_prediction": disease_result
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing image: {str(e)}")
+
 
 @app.get("/predict-disease/plant-image")
 async def predict_disease_image():

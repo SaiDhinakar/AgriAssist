@@ -1,9 +1,2 @@
 .env
-.venv
-test/
-train/
-valid/
-Dataset/
-__pycache__/
-Pest_Dataset/
-Pesticide_Dataset/
+venv
