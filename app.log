@@ -1,0 +1,17 @@
+2025-05-31 19:56:07,788 - INFO - Prediction successful for Pepper_bell___Bacterial_spot
+2025-05-31 19:57:57,432 - INFO - Prediction successful for Orange___Haunglongbing_(Citrus_greening)
+2025-05-31 20:00:08,100 - INFO - Prediction successful for Pepper_bell___healthy
+2025-05-31 20:00:16,301 - INFO - Prediction successful for Potato___healthy
+2025-05-31 20:01:03,012 - INFO - Prediction successful for Orange___Haunglongbing_(Citrus_greening)
+2025-05-31 20:01:47,049 - INFO - Prediction successful for Corn_(maize)___healthy
+2025-05-31 20:01:54,940 - INFO - Prediction successful for Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+2025-05-31 20:02:03,714 - INFO - Prediction successful for Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+2025-05-31 20:02:05,520 - INFO - Prediction successful for Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+2025-05-31 20:02:11,718 - INFO - Prediction successful for Apple___Cedar_apple_rust
+2025-05-31 20:02:18,496 - INFO - Prediction successful for Grape___Leaf_blight_(Isariopsis_Leaf_Spot)
+2025-05-31 20:15:21,703 - INFO - Prediction successful for Corn_(maize)___healthy
+2025-05-31 20:31:36,578 - INFO - Weather service initialized successfully
+2025-05-31 20:31:36,583 - INFO - Gemini AI chatbot initialized successfully
+2025-05-31 20:31:38,605 - INFO - Disease prediction model loaded successfully
+2025-05-31 20:31:38,607 - INFO - Starting Plant Disease Detection API server
+2025-05-31 20:32:23,523 - INFO - Successful prediction: Corn_(maize)___healthy
