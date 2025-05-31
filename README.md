@@ -125,6 +125,8 @@ GEMINI_API_KEY=your_gemini_api_key
 4. Run the application:
 
 ```bash
+python main.py 
+# or
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
