@@ -15,3 +15,20 @@
 2025-05-31 20:31:38,605 - INFO - Disease prediction model loaded successfully
 2025-05-31 20:31:38,607 - INFO - Starting Plant Disease Detection API server
 2025-05-31 20:32:23,523 - INFO - Successful prediction: Corn_(maize)___healthy
+2025-06-01 17:13:26,236 - INFO - Weather service initialized successfully
+2025-06-01 17:13:26,242 - INFO - Gemini AI chatbot initialized successfully
+2025-06-01 17:13:27,988 - INFO - Plant disease model loaded successfully
+2025-06-01 17:13:27,988 - ERROR - Failed to load model or labels: name 'load_class_names' is not defined
+2025-06-01 17:15:55,060 - INFO - Weather service initialized successfully
+2025-06-01 17:15:55,060 - INFO - Gemini AI chatbot initialized successfully
+2025-06-01 17:15:55,774 - INFO - Plant disease model loaded successfully
+2025-06-01 17:15:55,798 - INFO - Pest class file loaded successfully
+2025-06-01 17:15:55,799 - ERROR - Failed to load model or labels: name 'load_pest_model' is not defined
+2025-06-01 17:18:12,443 - INFO - Weather service initialized successfully
+2025-06-01 17:18:12,455 - INFO - Gemini AI chatbot initialized successfully
+2025-06-01 17:18:13,197 - INFO - Plant disease model loaded successfully
+2025-06-01 17:18:13,198 - INFO - Pest class file loaded successfully
+2025-06-01 17:18:16,169 - INFO - Pest detection model loaded successfully
+2025-06-01 17:18:16,169 - INFO - Pest detection model loaded successfully
+2025-06-01 17:18:16,172 - INFO - Starting Plant Disease Detection API server
+2025-06-01 17:19:17,478 - INFO - Successful pest prediction:  Miridae
